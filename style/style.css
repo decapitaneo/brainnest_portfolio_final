@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+body {
+    font-family: 'Poppins', sans-serif;
+}
+  
+header {
+    background:  #b4a5f5;
+}
+
+.container{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+  
+.col-2 {
+    flex-basis: 50%;
+    min-width: 300px;
+    padding-top: 2rem;
+}
+
+.col-2 h2 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+#skills p {
+    font-size: 1.2rem;
+    padding-top: 0.8rem;
+}
+.col-2 .perfil img {
+    max-width: 100%;
+    padding: 0 0;
+}
+
+.sociallinks {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.sociallinks img {
+    height: 40px;
+    width: 40px;
+}
+
+.courses {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.courses img {
+    width: 100px;
+    height: 100px;
+}
+
+.portfolio {
+    margin: 40px 0;
+}
+
+.size_portfolio {
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.col-3 {
+    flex-basis: 30%;
+    min-width: 250px;
+    margin-bottom: 30px;
+    background-color: rgb(243, 240, 240);
+    box-shadow: 0px 16px 15px -9px rgb(0 0 0 / 81%);
+    transition: transform 0.5s;
+}
+
+.col-3:hover {
+    transform: translateY(-5px);
+}
+
+.col-3 img {
+    width: 100%;
+}
+
+.projectTitle_links_description {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.projectTitle_links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.project_description {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.links_share img {
+    width: 30px;
+    height: 30px;
+}
+
+footer {
+    background:  #b4a5f5;
+}
+
+footer .col-2 img  {
+    width: 100%;
+}
+
+/*
+@media (min-width: 601px) and (max-width: 799px){ 
+    .col-3 {
+        flex-basis: 50%;
+    }
+
+}
+*/
+@media only screen and (max-width: 600px) {
+    .row {
+      text-align: center;
+    }
+  
+    .col-2,
+    .col-3 {
+      flex-basis: 100%;
+    }
+  }
