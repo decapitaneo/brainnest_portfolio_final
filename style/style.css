@@ -41,9 +41,31 @@ header {
     font-size: 1.2rem;
     padding-top: 0.8rem;
 }
+
+.skills {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 1rem;
+    margin-top: 1rem;
+    background-color: white;
+    border-radius: 8px;
+}
+
+.skills img {
+    width: 40px;
+    height: 40px;
+}
+
+.skills p {
+padding-left:  1rem;
+}
+
 .col-2 .perfil img {
     max-width: 100%;
     padding: 0 0;
+    padding-left: 1rem;
 }
 
 .sociallinks {
@@ -111,6 +133,7 @@ header {
     justify-content: space-between;
 }
 
+
 .project_description {
     padding-top: 1rem;
     padding-bottom: 1rem;
@@ -129,17 +152,40 @@ footer .col-2 img  {
     width: 100%;
 }
 
-/*
+
 @media (min-width: 601px) and (max-width: 799px){ 
+    .row {
+        text-align: center;
+      }
+      
+    .skills {
+        justify-content: center;
+    }
+    
+    .col-2 .perfil img {
+        padding-left: 0;
+    }
+      
+    .col-2 {
+        flex-basis: 100%;
+    
+    }
     .col-3 {
         flex-basis: 50%;
     }
-
 }
-*/
+
 @media only screen and (max-width: 600px) {
     .row {
       text-align: center;
+    }
+    
+    .skills {
+        justify-content: center;
+    }
+    
+    .col-2 .perfil img {
+        padding-left: 0;
     }
   
     .col-2,
